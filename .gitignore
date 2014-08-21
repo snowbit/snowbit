@@ -1,3 +1,11 @@
 #IntelliJ Idea
 .idea/
 
+#node_modules
+node_modules/
+
+#実行ファイル
+bin/
+
+#Shell Script
+*.sh
