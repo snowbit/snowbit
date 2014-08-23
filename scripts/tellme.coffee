@@ -9,6 +9,11 @@
 #
 # Authors:
 #   S--Minecraft
+#
+# License;
+#   Copyright (c) 2014 snowbit.
+#   Released under the Apache v2 license
+#   https://github.com/snowbit/snowbit/blob/master/LICENSE
 
 class space
   RandomSpace: ->

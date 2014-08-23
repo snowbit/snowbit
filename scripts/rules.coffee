@@ -6,6 +6,11 @@
 #
 # Notes:
 #   DON'T DELETE THIS SCRIPT! ALL ROBAWTS MUST KNOW THE RULES
+#
+# License;
+#   Copyright (c) 2014 GitHub Inc.
+#   Released under the MIT license
+#   https://github.com/snowbit/snowbit/blob/master/NOTICE
 
 rules = [
   "1. ロボットは人間に危害を加えてはならない。また、その危険を看過することによって、人間に危害を及ぼしてはならない。",

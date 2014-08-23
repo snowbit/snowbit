@@ -16,6 +16,11 @@
 #
 # Author:
 #   Airborn
+#
+# License;
+#   Copyright (c) 2014 GitHub Inc.
+#   Released under the MIT license
+#   https://github.com/snowbit/snowbit/blob/master/NOTICE
 
 module.exports = (robot) ->
   robot.respond /(google|search)( me)? (.*)/i, (msg) ->

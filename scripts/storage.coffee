@@ -4,7 +4,11 @@
 # Commands:
 #   hubot show users - Display all users that hubot knows about
 #   hubot show storage - Display the contents that are persisted in the brain
-
+#
+# License;
+#   Copyright (c) 2014 GitHub Inc.
+#   Released under the MIT license
+#   https://github.com/snowbit/snowbit/blob/master/NOTICE
 
 Util = require "util"
 

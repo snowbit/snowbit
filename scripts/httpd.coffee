@@ -16,6 +16,11 @@
 #   /hubot/time
 #   /hubot/info
 #   /hubot/ip
+#
+# License;
+#   Copyright (c) 2014 GitHub Inc.
+#   Released under the MIT license
+#   https://github.com/snowbit/snowbit/blob/master/NOTICE
 
 spawn = require('child_process').spawn
 

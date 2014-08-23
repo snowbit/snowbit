@@ -14,6 +14,11 @@
 #
 # Author:
 #   benjamine
+#
+# License;
+#   Copyright (c) 2014 GitHub Inc.
+#   Released under the MIT license
+#   https://github.com/snowbit/snowbit/blob/master/NOTICE
 
 child_process = require 'child_process'
 downloaded_updates = false

@@ -4,6 +4,11 @@
 # Commands:
 #   hubot translate me <phrase> - Searches for a translation for the <phrase> and then prints that bad boy out.
 #   hubot translate me from <source> into <target> <phrase> - Translates <phrase> from <source> into <target>. Both <source> and <target> are optional
+#
+# License;
+#   Copyright (c) 2014 GitHub Inc.
+#   Released under the MIT license
+#   https://github.com/snowbit/snowbit/blob/master/NOTICE
 
 languages =
   "af": "Afrikaans",
