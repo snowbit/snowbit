@@ -31,7 +31,7 @@
 
 ##[google-search-api.coffee](https://github.com/github/hubot/blob/master/src/scripts/google-search-api.coffee)
 
-##[ping.coffee](https://github.com/snowfox226/snowbit/blob/master/scripts/ping.coffee)
+##[ping.coffee](https://github.com/snowbit/snowbit/blob/master/scripts/ping.coffee)
 ###`ping`or`ピン`
 ポンと返してくれます<br>
 `ping` -> `pong`<br>
@@ -49,13 +49,13 @@
 なんかよくわからない<br>
 `ゆきさん` -> `ゆきさんはかわゆいんじゃぁ＾～（絶対）`
 
-##[feeling.coffee](https://github.com/snowfox226/snowbit/blob/master/scripts/feeling.coffee)
+##[feeling.coffee](https://github.com/snowbit/snowbit/blob/master/scripts/feeling.coffee)
 ###`気分どう？`
 今のsnowbitの気分を答えてくれます
 ###`おみくじ`
 おみくじをsnowbitとリプした相手の分を引いて答えてくれます
 
-##[tellme.coffee](https://github.com/snowfox226/snowbit/blob/master/scripts/tellme.coffee)
+##[tellme.coffee](https://github.com/snowbit/snowbit/blob/master/scripts/tellme.coffee)
 ###`tellme もふもふ度の計算式`
 もふもふ度の計算式（適当）を返してくれます
 ###`tellme math 展開・因数分解の公式`
