@@ -2,11 +2,11 @@
 #   Utility commands surrounding Hubot uptime.
 #
 # Commands:
-#   ping - Reply with pong
-#   ピン - ポン
-#   エコー|まね <text> - Reply back with <text>
-#   現在時刻|今何時？ - Reply with current time
-#   exit - End hubot process
+#   ping - pongと返します
+#   ピン - ポンと返します
+#   エコー|まね <text> - <text>を返します
+#   現在時刻|今何時？ - 現在時刻を返します
+#   exit - Hubotのプロセスを終了します（現在使用不可）
 #   ごちうさ|こころぴょんぴょん - あぁ＾～心がぴょんぴょんするんじゃぁ＾～
 #   snowfox226|ゆきさん|ゆきぎつね - ゆきさんはかわゆいんじゃぁ＾～（絶対）
 #
@@ -36,12 +36,12 @@ module.exports = (robot) ->
     msg.reply "現在の時刻は #{new Date()}です。"
 
   robot.on "followed", (event) ->
-    robot.logger.info "followed #{event.user.name}!"
+    robot.logger.info "#{event.user.name}さんをフォローしました!"
     robot.adapter.join event.user
 
   robot.respond /Join/i, (msg) ->
     robot.adapter.join msg.message.user
-    msg.reply "Joined #{msg.message.user.name}"
+    msg.reply "#{msg.message.user.name}さんが参加しました"
 
   robot.respond /ごちうさ|こころぴょんぴょん/i, (msg) ->
     msg.reply "あぁ＾～心がぴょんぴょんするんじゃぁ＾～"
