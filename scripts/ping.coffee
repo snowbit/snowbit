@@ -46,6 +46,9 @@ module.exports = (robot) ->
   robot.respond /ごちうさ|こころぴょんぴょん/i, (msg) ->
     msg.reply "あぁ＾～心がぴょんぴょんするんじゃぁ＾～"
 
+  robot.respond /(ごちうさ|こころぴょんぴょん)(する|したい|します|しよう|させて|させろ)(!|！|?|？| |　|)/i, (msg) ->
+    msg.reply "第一羽はこちらですよ。つ（http://www.nicovideo.jp/watch/1397552685）"
+
   robot.respond /snowfox226|ゆきさん|ゆきぎつね/i, (msg) ->
     msg.reply "ゆきさんはかわゆいんじゃぁ＾～（絶対）"
 
