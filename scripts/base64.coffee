@@ -19,8 +19,8 @@
 #   https://github.com/snowbit/snowbit/blob/master/NOTICE
 
 module.exports = (robot) ->
-  robot.respond /base64 -e( me)? (.*)/i, (msg) ->
+  robot.respond /base64( |　)-e( me)? (.*)/i, (msg) ->
     msg.reply new Buffer(msg.match[2]).toString('base64')
 
-  robot.respond /base64 -d( me)? (.*)/i, (msg) ->
+  robot.respond /base64( |　)-d( me)? (.*)/i, (msg) ->
     msg.reply new Buffer(msg.match[2], 'base64').toString('utf8')
