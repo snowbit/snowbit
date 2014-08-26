@@ -19,3 +19,4 @@ module.exports = (robot) ->
       msg.reply "base64 -e|-d <query> - Base64 のエンコードとデコードを行います"
     if src == ""
       msg.reply "ping|ぴん - Reply with pong"
+    if src == ""
