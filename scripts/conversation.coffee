@@ -64,5 +64,5 @@ phrases = [
 
 module.exports = (robot) ->
 
-  robot.hear /snowbit/i, (msg) ->
+  robot.hear /(snowbit|sn0wbit)/i, (msg) ->
     msg.reply msg.random phrases

@@ -29,7 +29,7 @@ module.exports = (robot) ->
   robot.respond /アダプター/i, (msg) ->
     msg.reply robot.adapterName
 
-  robot.respond /(エコー|まね)( |　)(.*)/i, (msg) ->
+  robot.respond /(エコー|まね)\s(.*)/i, (msg) ->
     msg.reply msg.match[3]
 
   robot.respond /(現在時刻|(いま|今)何時？)/i, (msg) ->
@@ -43,10 +43,10 @@ module.exports = (robot) ->
     robot.adapter.join msg.message.user
     msg.reply "#{msg.message.user.name}さんが参加しました"
 
-  robot.respond /ごちうさ|こころぴょんぴょん/i, (msg) ->
+  robot.respond /(ごちうさ|こころぴょんぴょん)($|\s)/i, (msg) ->
     msg.reply "あぁ＾～心がぴょんぴょんするんじゃぁ＾～"
 
-  robot.respond /(ごちうさ|こころぴょんぴょん)(する|したい|します|しよう|させて|させろ)(!|！|?|？| |　|)/i, (msg) ->
+  robot.respond /(ごちうさ|こころぴょんぴょん)(する|したい|します|しよう|させて|させろ)(\!|！|\?|？)?/i, (msg) ->
     msg.reply "第一羽はこちらですよ。つ（http://www.nicovideo.jp/watch/1397552685）"
 
   robot.respond /snowfox226|ゆきさん|ゆきぎつね/i, (msg) ->
