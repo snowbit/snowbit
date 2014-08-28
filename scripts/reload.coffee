@@ -9,6 +9,7 @@
 #
 # Commands:
 #   hubot command count - Tells how many commands hubot knows
+#   hubot reload -s - Reloads hubot's scripts
 #
 # Author:
 #   spajus
