@@ -55,8 +55,10 @@ module.exports = (robot) ->
   robot.respond /test/i, (msg) ->
     msg.reply robot.user.stream()
 
-# robot.respond /exit/i, (msg) ->
-#   msg.send "終了します"
-#   setTimeout ->
-#     process.exit 0
-#   , 1000
+  robot.respond /exit/i, (msg) ->
+    master = "Shell"
+    if "#{msg.message.user.name}" is master
+       msg.send "終了します"
+       setTimeout ->
+         process.exit 0
+       , 1000
