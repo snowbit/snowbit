@@ -27,47 +27,47 @@ module.exports = (robot) ->
 
     robot.respond /pending updates?\??$/i, (msg) ->
         if downloaded_updates
-            msg.send "I have some pending updates, KILL ME PLEASE! (hint: hubot die)"
+            msg.send "未適用アップデートがあります。私を停止してください！(ヒント: hubot die)"
         else
-            msg.send "I'm up-to-date!"
+            msg.send "最新です！"
 
     robot.respond /update( yourself)?$/i, (msg) ->
         changes = false
         try
-            msg.send "git pull..."
+            msg.send "gitをプル中です..."
             child_process.exec 'git pull', (error, stdout, stderr) ->
                 if error
-                    msg.send "git pull failed: " + stderr
+                    msg.send "gitをプルするのに失敗しました: " + stderr
                 else
                     output = stdout+''
                     if not /Already up\-to\-date/.test output
-                        msg.send "my source code changed:\n" + output
+                        msg.send "ソースが変更されました:\n" + output
                         changes = true
                     else
-                        msg.send "my source code is up-to-date"
+                        msg.send "ソースは最新です"
                 try
-                    msg.send "npm update..."
+                    msg.send "npmをアップデートします..."
                     child_process.exec 'npm update', (error, stdout, stderr) ->
                         if error
-                            msg.send "npm update failed: " + stderr
+                            msg.send "npmをアップデートするのに失敗しました: " + stderr
                         else
                             output = stdout+''
                             if /node_modules/.test output
-                                msg.send "some dependencies updated:\n" + output
+                                msg.send "いくつかのdependenciesがアップデートされました:\n" + output
                                 changes = true
                             else
-                                msg.send "all dependencies are up-to-date"
+                                msg.send "すべてのdependenciesは最新です"
                         if changes
                             downloaded_updates = true
-                            msg.send "I downloaded some updates, KILL ME PLEASE! (hint: hubot die)"
+                            msg.send "いくつかのアップデートをダウンロードしました。私を停止してください！(ヒント: hubot die)"
                         else
                             if downloaded_updates
-                                msg.send "I have some pending updates, KILL ME PLEASE! (hint: hubot die)"
+                                msg.send "未適用のいくつかのアップデートがあります。私を停止してください！(ヒント: hubot die)"
                             else
-                                msg.send "I'm up-to-date!"
+                                msg.send "最新です!"
                 catch error
-                    msg.send "npm update failed: " + error
+                    msg.send "npmをアップデートするのに失敗しました: " + error
         catch error
-            msg.send "git pull failed: " + error
+            msg.send "gitをプルするのに失敗しました: " + error
 
 
