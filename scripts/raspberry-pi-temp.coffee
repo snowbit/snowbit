@@ -16,7 +16,7 @@
 child_process = require 'child_process'
 
 module.exports = (robot) ->
-   robot.respond /RaspberryPi getTemp/i, (msg) ->
+   robot.respond /temp/i, (msg) ->
       child_process.exec 'cat /sys/class/thermal/thermal_zone0/temp', (error, stdout, stderr) ->
          if error
             msg.reply "取得失敗: " + stderr
@@ -24,4 +24,4 @@ module.exports = (robot) ->
             temp = stdout+''
             temp = temp/1000
             
-            msg.reply "現在のRaspberryPiの温度は" + temp + "です。"
+            msg.reply "現在のCPU温度は" + temp + "です。"
