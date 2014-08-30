@@ -49,7 +49,7 @@ module.exports = (robot) ->
             if temp<40
                every = '0 * * * * *'
             else if temp<50
-               user = "Shell" #ここのShellを変更必要
+               user = "Shell"
                robot.send user, "現在のCPU温度は#{new Date()}です！！！"
                every = '* * * * * *'
             else

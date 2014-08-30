@@ -49,14 +49,14 @@ module.exports = (robot) ->
   robot.respond /(ごちうさ|こころぴょんぴょん)(する|したい|します|しよう|させて|させろ)(\!|！|\?|？)?/i, (msg) ->
     msg.reply "第一羽はこちらですよ。つ（http://www.nicovideo.jp/watch/1397552685）"
 
-  robot.respond /snowfox226|ゆきさん|ゆきぎつね/i, (msg) ->
+  robot.respond /snowfox226|snovxn|ゆきさん|ゆきぎつね/i, (msg) ->
     msg.reply "ゆきさんはかわゆいんじゃぁ＾～（絶対）"
 
   robot.respond /test/i, (msg) ->
     msg.reply robot.user.stream()
 
   robot.respond /exit/i, (msg) ->
-    master = "Shell"
+    master = "snovxn"
     if "#{msg.message.user.name}" is master
        msg.send "終了します"
        setTimeout ->
