@@ -29,8 +29,8 @@ module.exports = (robot) ->
   robot.respond /アダプター/i, (msg) ->
     msg.reply robot.adapterName
 
-  robot.respond /(エコー|まね)\s(.*)/i, (msg) ->
-    msg.reply msg.match[3]
+  robot.respond /(エコー|まね|echo)\s(.*)/i, (msg) ->
+    msg.reply msg.match[2]
 
   robot.respond /(現在時刻|(いま|今)何時？)/i, (msg) ->
     msg.reply "現在の時刻は #{new Date()}です。"
