@@ -21,13 +21,14 @@
     "url": "https://github.com/github/hubot.git"
   },
   "dependencies": {
+    "flip": "~0.1.0",
     "hubot": "^2.8.0",
+    "hubot-irc": "^0.2.7",
     "hubot-scripts": ">= 2.5.0 < 3.0.0",
     "hubot-twitter": "^2.1.1",
     "hubot-twitter-userstream": "0.0.2",
     "mecab-async": "0.0.8",
-    "mysql": "^2.4.2",
-    "flip": "~0.1.0"
+    "mysql": "^2.4.2"
   },
   "engines": {
     "node": ">= 0.8.x",
