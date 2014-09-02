@@ -26,9 +26,6 @@ oldListeners = null
 
 module.exports = (robot) ->
 
-  robot.respond /command count/i, (msg) ->
-    msg.send "#{msg.robot.commands.length} のコマンドを適用中です"
-
   robot.respond /reload -s/i, (msg) ->
     try
       oldCommands = robot.commands
@@ -85,4 +82,3 @@ reloadAllScripts = (msg, success, error) ->
           robot.loadExternalScripts scripts
           return
   success(msg)
-
