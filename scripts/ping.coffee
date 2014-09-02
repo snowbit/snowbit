@@ -35,7 +35,7 @@ module.exports = (robot) ->
   robot.respond /ピン/i, (msg) ->
     msg.reply "ポン"
 
-  robot.respond /アダプター/i, (msg) ->
+  robot.respond /アダプター|adapter/i, (msg) ->
     msg.reply robot.adapterName
 
   robot.respond /(エコー|まね)\s(.*)/i, (msg) ->
