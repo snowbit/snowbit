@@ -1,9 +1,9 @@
 # Description:
-#   mecabを使って形態素解析をし、SQLiteのDBに収納します。
+#   mecabを使って形態素解析をし、MySQLのDBに収納します。
 #
 # Dependencies:
-#   "sqlite3": "2.2.7"
-#   "mecab-acync": "0.0.8"
+#   "mysql": ">=2.4.3"
+#   "mecab-acync": ">=0.0.8"
 #
 # Commands:
 #   None
@@ -17,4 +17,3 @@
 #   https://github.com/snowbit/snowbit/blob/master/LICENSE
 
 module.exports = (robot) ->
-
