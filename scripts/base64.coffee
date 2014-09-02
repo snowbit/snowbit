@@ -21,6 +21,8 @@
 module.exports = (robot) ->
   robot.respond /base64\s(-e|-encode)\s(.*)/i, (msg) ->
     msg.reply new Buffer(msg.match[2]).toString('base64')
+    console.log "Base64 encoding:" + Buffer(msg.match[2]).toString('base64')
 
   robot.respond /base64\s(-d|decode)\s(.*)/i, (msg) ->
     msg.reply new Buffer(msg.match[2], 'base64').toString('utf8')
+    console.log "Base64 decoding:" + Buffer(msg.match[2], 'base64').toString('utf8')
