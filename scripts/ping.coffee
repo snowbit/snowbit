@@ -19,6 +19,15 @@
 #   Released under the Apache v2 license
 #   https://github.com/snowbit/snowbit/blob/master/LICENSE
 
+class Space ->
+  @randam_space ->
+    length = Math.floor(Math.random() * 30) + 1
+    result = ""
+    str = "　";
+    for index in [1..length]
+        result += str[Math.floor(Math.random() * str.length)]
+    result
+
 module.exports = (robot) ->
   robot.respond /PING/i, (msg) ->
     msg.reply "PONG"
