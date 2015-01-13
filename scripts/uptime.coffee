@@ -20,7 +20,7 @@ module.exports = (robot) ->
   robot.respond /uptime/i, (msg) ->
     uptimeMe msg, start, (uptime) ->
       msg.send uptime
-time.coffee
+
 numPlural = (num) ->
   if num != 1 then 's' else ''
 
@@ -46,4 +46,3 @@ uptimeMe = (msg, start, cb) ->
     response = elements.join ', '
 
   cb 'I\'ve been sentient for ' + response
-
