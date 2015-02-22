@@ -15,4 +15,4 @@
 
 module.exports = (robot) ->
   robot.respond /PING/i, (msg) ->
-    msg.reply "PONG\n\n[#{new Date()}]"
+    msg.reply "PONG\n\n#{new Date()}"
