@@ -1,37 +1,15 @@
 {
-  "name": "hosted-hubot",
-  "version": "2.7.1",
+  "name": "snowbit",
+  "version": "0.0.0",
   "private": true,
-
-  "author": "GitHub Inc.",
-
-  "keywords": [
-    "github",
-    "hubot",
-    "campfire",
-    "bot"
-  ],
-
+  "author": "ayatk <ayatk@users.noreply.github.com>",
   "description": "A simple helpful robot for your Company",
-
-  "licenses": [{
-    "type": "MIT",
-    "url": "https://github.com/github/hubot/raw/master/LICENSE"
-  }],
-
-  "repository" : {
-    "type": "git",
-    "url": "https://github.com/github/hubot.git"
-  },
-
   "dependencies": {
-    "hubot": ">= 2.11.1",
-    "hubot-scripts": ">= 2.5.16",
-    "hubot-twitter-userstream": ">= 0.0.3"
+    "hubot": "^2.16.0",
+    "hubot-heroku-keepalive": "^1.0.0",
+    "hubot-twitter-userstream": "0.0.3"
   },
-
   "engines": {
-    "node": ">= 0.8.x",
-    "npm":  ">= 1.1.x"
+    "node": "4.1.x"
   }
 }

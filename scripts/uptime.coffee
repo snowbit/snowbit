@@ -19,7 +19,7 @@ module.exports = (robot) ->
 
   robot.respond /uptime/i, (msg) ->
     uptimeMe msg, start, (uptime) ->
-      msg.send uptime
+      msg.reply uptime
 
 numPlural = (num) ->
   if num != 1 then 's' else ''

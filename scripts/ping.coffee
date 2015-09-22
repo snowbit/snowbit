@@ -1,17 +1,12 @@
 # Description:
-#   Utility commands surrounding Hubot uptime.
+#   ping-pong
 #
 # Commands:
-#   ping - pongと返します
+#   ping - return pong
 #
 # Authors:
 #   S--Minecraft
-#   snvx
-#
-# License;
-#   Copyright (c) 2015 snowbit.
-#   Released under the Apache v2 license
-#   https://github.com/snowbit/snowbit/blob/master/LICENSE
+#   ayatk
 
 module.exports = (robot) ->
   robot.respond /PING/i, (msg) ->
